@@ -16,7 +16,7 @@ export default function Hero() {
       {/* === Left Column: Text Content === 
           Added max-width constraints to ensure text doesn't overlap image too much
       */}
-      <div className="relative z-20 w-full lg:w-[50%] flex flex-col justify-center px-8 md:px-20 py-16 lg:py-20 bg-[#050A14]">
+      <div className="relative z-20 w-full lg:w-[50%] flex flex-col justify-center px-8 md:px-20 pt-28 pb-16 lg:pt-32 lg:pb-20 bg-[#050A14]">
         <div className="max-w-lg">
           
           {/* 1. Name Title */}

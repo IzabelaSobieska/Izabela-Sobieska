@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izabela Sobieska | Investment Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        slate: {
+                            850: '#1e293b', 
+                            900: '#0f172a', // Deep background
+                        },
+                        amber: {
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-slate-900 bg-white selection:bg-amber-200 selection:text-amber-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-serif font-bold text-slate-900 tracking-tight">
+                Izabela<span class="text-amber-600">.</span>S
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-slate-900 transition-colors">About</a>
+                <a href="#strengths" class="hover:text-slate-900 transition-colors">Strengths</a>
+                <a href="#experience" class="hover:text-slate-900 transition-colors">Experience</a>
+                <a href="#education" class="hover:text-slate-900 transition-colors">Education</a>
+                <a href="#contact" class="px-5 py-2.5 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-all shadow-sm hover:shadow-md">
+                    Contact
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button (Placeholder functionality) -->
+            <button class="md:hidden text-2xl text-slate-900">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Consistent with React Preview) -->
+    <section id="home" class="relative min-h-screen flex flex-col md:flex-row bg-[#0F172A]">
+        
+        <!-- Left Content Side (40-45%) -->
+        <div class="w-full md:w-[45%] relative z-20 flex items-center justify-center px-6 md:px-12 py-24 md:py-0 bg-[#0F172A]">
+            <div class="max-w-lg w-full">
+                <!-- Name Badge -->
+                <div class="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-white/10 border border-white/10 backdrop-blur-sm text-white/90 text-xs font-bold tracking-widest uppercase mb-8">
+                    <span class="w-2 h-2 bg-amber-500 rounded-full animate-pulse"></span>
+                    Izabela Sobieska
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif text-white leading-[1.1] mb-8">
+                    Bridging traditional <br>
+                    finance and the <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-500 italic pr-2">digital asset future.</span>
+                </h1>
+
+                <!-- Description with Left Border Line -->
+                <div class="flex gap-6 mb-10">
+                    <div class="w-1 bg-gradient-to-b from-amber-500 to-transparent rounded-full shrink-0 h-24"></div>
+                    <p class="text-lg md:text-xl text-slate-400 leading-relaxed font-light">
+                        Specializing in <span class="text-white font-medium">crypto strategies</span>, 
+                        <span class="text-white font-medium">asset management</span>, and 
+                        <span class="text-white font-medium">risk control</span> with a background at 
+                        <strong class="text-white">Deutsche Bank</strong> and <strong class="text-white">Man Group</strong>.
+                    </p>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-wrap gap-4 mb-16">
+                    <a href="mailto:contact@example.com" class="group flex items-center gap-3 px-7 py-4 bg-white text-slate-900 rounded-full font-medium hover:bg-amber-50 transition-all shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                        <i class="ph ph-envelope-simple text-xl group-hover:text-amber-600 transition-colors"></i>
+                        <span>Email Me</span>
+                    </a>
+                    <a href="https://wa.me/1234567890" class="group flex items-center gap-3 px-7 py-4 bg-transparent border border-white/20 text-white rounded-full font-medium hover:bg-white/10 transition-all backdrop-blur-sm">
+                        <i class="ph ph-whatsapp-logo text-xl text-green-400 group-hover:text-green-300 transition-colors"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Stats Footer -->
+                <div class="grid grid-cols-3 gap-8 border-t border-white/10 pt-8 text-white/80">
+                    <div>
+                        <div class="text-[10px] text-slate-500 uppercase tracking-wider font-bold mb-1">Location</div>
+                        <div class="font-serif text-base md:text-lg text-white">Poland / Global</div>
+                    </div>
+                    <div>
+                        <div class="text-[10px] text-slate-500 uppercase tracking-wider font-bold mb-1">Experience</div>
+                        <div class="font-serif text-base md:text-lg text-white">15+ Years</div>
+                    </div>
+                    <div>
+                        <div class="text-[10px] text-slate-500 uppercase tracking-wider font-bold mb-1">Focus</div>
+                        <div class="font-serif text-base md:text-lg text-white">Macro & Crypto</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Image Side (55-60%) -->
+        <div class="w-full md:w-[55%] absolute md:relative inset-0 md:inset-auto h-full z-0 md:z-auto">
+            <img 
+                src="https://pub-cdn.sider.ai/u/U005HE02679/web-coder/69204927965d1d957f097986/resource/ba165ca0-a100-4ee7-a491-4c677216a8cf.png" 
+                alt="Izabela Sobieska" 
+                class="w-full h-full object-cover object-center md:object-[center_20%]"
+            >
+            <!-- Gradient Overlay (Only on Mobile or merging edge) -->
+            <div class="absolute inset-0 bg-[#0F172A]/80 md:bg-transparent md:bg-gradient-to-r md:from-[#0F172A] md:via-[#0F172A]/20 md:to-transparent"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 md:py-32 bg-white px-6 md:px-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div class="relative">
+                    <div class="sticky top-32">
+                        <h2 class="text-4xl md:text-5xl font-serif text-slate-900 mb-6">About Me</h2>
+                        <div class="w-20 h-1 bg-amber-500 mb-8"></div>
+                        <p class="text-xl text-slate-500 font-light leading-relaxed mb-8">
+                            "I operate at the intersection of traditional banking rigor and the emerging digital asset economy."
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                                <div class="text-xs uppercase tracking-wider text-slate-400 font-bold mb-1">Nationality</div>
+                                <div class="text-slate-900 font-medium">Polish</div>
+                            </div>
+                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                                <div class="text-xs uppercase tracking-wider text-slate-400 font-bold mb-1">Born</div>
+                                <div class="text-slate-900 font-medium">1986 (39 y/o)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8 text-lg text-slate-600 leading-loose">
+                    <p>
+                        I am a Polish independent investor and entrepreneurial finance professional. With a deep foundation in Finance from the <strong>University of Warsaw</strong> and specialized training from <strong>LSE</strong>, I combine academic depth with practical market experience.
+                    </p>
+                    <p>
+                        My career began at <strong>Deutsche Bank</strong>, where I managed asset allocation for High-Net-Worth clients. I later transitioned to <strong>Man Group</strong>, one of the world's largest independent alternative investment managers, honing my skills in quantitative modeling and global macro strategies.
+                    </p>
+                    <div class="bg-[#F8FAFC] p-8 rounded-2xl border border-slate-200 relative">
+                        <i class="ph ph-quotes-fill text-4xl text-amber-200 absolute top-6 left-6"></i>
+                        <p class="relative z-10 italic text-slate-700 pl-8">
+                            Today, through <strong>CryptoVision Research</strong>, I apply a systematic, data-driven methodology to invest in BTC, ETH, and DeFi. I believe the future belongs to those who can bridge the gap between institutional stability and decentralized innovation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STRENGTHS SECTION -->
+    <section id="strengths" class="py-20 md:py-32 bg-[#F8FAFC] border-y border-slate-200 px-6 md:px-12">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-serif text-slate-900 mb-16 text-center">Core Competencies</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-6">
+                        <i class="ph ph-trend-up text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif text-slate-900 mb-6">Investment Strategy</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-blue-500 text-xl mt-0.5 shrink-0"></i>
+                            <span class="text-slate-600">Multi-asset portfolio construction & rebalancing.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-blue-500 text-xl mt-0.5 shrink-0"></i>
+                            <span class="text-slate-600">Crypto day trading & derivatives strategies.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-blue-500 text-xl mt-0.5 shrink-0"></i>
+                            <span class="text-slate-600">Systematic investment in BTC, ETH, & DeFi.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-blue-500 text-xl mt-0.5 shrink-0"></i>
+                            <span class="text-slate-600">Macro-cycle analysis combined with on-chain data.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 mb-6">
+                        <i class="ph ph-shield-check text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif text-slate-900 mb-6">Risk & Operations</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-amber-500 text-xl mt-0.5 shrink-0"></i>
+                            <span class="text-slate-600">Institutional-grade risk budgeting & control.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-amber-500 text-xl mt-0.5 shrink-0"></i>
+                            <span class="text-slate-600">HNW client coverage & wealth preservation.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-amber-500 text-xl mt-0.5 shrink-0"></i>
+                            <span class="text-slate-600">Cross-market due diligence & compliance.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-amber-500 text-xl mt-0.5 shrink-0"></i>
+                            <span class="text-slate-600">Financial education for traditional investors.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="py-20 md:py-32 bg-white px-6 md:px-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-serif text-slate-900 mb-16 text-center">Professional Journey</h2>
+            
+            <div class="relative pl-8 md:pl-0">
+                <!-- Timeline Vertical Line -->
+                <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-slate-200 -translate-x-1/2"></div>
+
+                <!-- Item 1 -->
+                <div class="relative mb-16 group">
+                    <div class="md:flex items-center justify-between w-full">
+                        <!-- Dot -->
+                        <div class="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 bg-amber-500 rounded-full border-4 border-white shadow-sm z-10"></div>
+                        
+                        <!-- Left Side (Date) -->
+                        <div class="md:w-[45%] mb-4 md:mb-0 md:text-right pr-8">
+                            <span class="inline-block px-3 py-1 rounded-full bg-amber-50 text-amber-700 text-xs font-bold tracking-wider uppercase">2018 — Present</span>
+                        </div>
+                        
+                        <!-- Right Side (Content) -->
+                        <div class="md:w-[45%] pl-8 md:pl-0">
+                            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-all relative group-hover:-translate-y-1">
+                                <h3 class="text-lg font-bold text-slate-900">Founder & Portfolio Manager</h3>
+                                <div class="text-slate-500 font-serif italic mb-4">CryptoVision Research</div>
+                                <ul class="text-sm text-slate-600 space-y-2 list-disc pl-4 marker:text-slate-300">
+                                    <li>Leading research on crypto projects, on-chain data, and market structure.</li>
+                                    <li>Focus: BTC, ETH, DeFi, Layer 2, and AI Tokens.</li>
+                                    <li>Independently guiding research teams for European clients.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="relative mb-16 group">
+                    <div class="md:flex items-center justify-between w-full flex-row-reverse">
+                        <div class="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 bg-slate-300 rounded-full border-4 border-white shadow-sm z-10"></div>
+                        
+                        <div class="md:w-[45%] mb-4 md:mb-0 md:text-left pl-8">
+                            <span class="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-bold tracking-wider uppercase">2014 — 2017</span>
+                        </div>
+                        
+                        <div class="md:w-[45%] pr-8 md:pr-0 md:text-right">
+                             <!-- Note: text-right wrapper, but card content text-left for readability -->
+                            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-all relative group-hover:-translate-y-1 text-left">
+                                <h3 class="text-lg font-bold text-slate-900">Trader / Market Strategist</h3>
+                                <div class="text-slate-500 font-serif italic mb-4">Man Group (London)</div>
+                                <ul class="text-sm text-slate-600 space-y-2 list-disc pl-4 marker:text-slate-300">
+                                    <li>Assisted in managing hedge fund investment portfolios.</li>
+                                    <li>Early exposure to Bitcoin and digital asset derivatives.</li>
+                                    <li>Developed short/mid-term strategies using Python & Bloomberg.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="relative group">
+                    <div class="md:flex items-center justify-between w-full">
+                        <div class="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 bg-slate-300 rounded-full border-4 border-white shadow-sm z-10"></div>
+                        
+                        <div class="md:w-[45%] mb-4 md:mb-0 md:text-right pr-8">
+                            <span class="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-bold tracking-wider uppercase">2010 — 2014</span>
+                        </div>
+                        
+                        <div class="md:w-[45%] pl-8 md:pl-0">
+                            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-all relative group-hover:-translate-y-1">
+                                <h3 class="text-lg font-bold text-slate-900">Financial Analyst</h3>
+                                <div class="text-slate-500 font-serif italic mb-4">Deutsche Bank (Frankfurt)</div>
+                                <ul class="text-sm text-slate-600 space-y-2 list-disc pl-4 marker:text-slate-300">
+                                    <li>Analyzed European/Global stock and bond markets.</li>
+                                    <li>Monitored Gold and FX volatility for HNW clients.</li>
+                                    <li>Responsible for corporate risk assessment.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="py-20 md:py-32 bg-slate-50 px-6 md:px-12">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-slate-900 mb-4">Education & Certifications</h2>
+                <p class="text-slate-500">Academic foundation and continuous professional development.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Degree 1 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-slate-900">Master of Finance</h3>
+                        <span class="text-xs font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded">2008-2010</span>
+                    </div>
+                    <div class="text-lg font-serif text-amber-700 mb-4">London School of Economics (LSE)</div>
+                    <p class="text-sm text-slate-600">Major in Finance and Asset Management. Research focused on risk control and global capital market derivatives.</p>
+                </div>
+
+                <!-- Degree 2 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-slate-900">Bachelor in Finance</h3>
+                        <span class="text-xs font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded">2004-2008</span>
+                    </div>
+                    <div class="text-lg font-serif text-amber-700 mb-4">University of Warsaw</div>
+                    <p class="text-sm text-slate-600">Focus on Financial Markets, Econometrics, and Investment Analysis. Active member of the Student Investment Club.</p>
+                </div>
+            </div>
+
+            <!-- Certs -->
+            <div class="bg-[#0F172A] rounded-2xl p-8 text-white grid grid-cols-1 md:grid-cols-3 gap-8 relative overflow-hidden">
+                <i class="ph ph-certificate absolute right-0 top-0 text-9xl text-white/5 rotate-12"></i>
+                <div class="relative z-10">
+                    <div class="text-amber-500 font-bold text-sm mb-1">2016</div>
+                    <div class="font-bold text-lg">FRM Certified</div>
+                    <div class="text-slate-400 text-sm">Financial Risk Manager</div>
+                </div>
+                <div class="relative z-10">
+                    <div class="text-amber-500 font-bold text-sm mb-1">2014</div>
+                    <div class="font-bold text-lg">Blockchain & Crypto</div>
+                    <div class="text-slate-400 text-sm">IE Business School</div>
+                </div>
+                <div class="relative z-10">
+                    <div class="text-amber-500 font-bold text-sm mb-1">2012</div>
+                    <div class="font-bold text-lg">CFA Level I</div>
+                    <div class="text-slate-400 text-sm">Chartered Financial Analyst</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section id="philosophy" class="py-20 px-6 bg-slate-900 text-white text-center">
+        <div class="max-w-3xl mx-auto">
+            <i class="ph ph-quotes text-6xl text-slate-700 mb-6 block mx-auto"></i>
+            <h2 class="text-2xl md:text-4xl font-serif leading-snug mb-8">
+                “In the volatile world of crypto, adhere to long-term value, data-driven decisions, and strict discipline.”
+            </h2>
+            <p class="text-slate-400 font-light text-lg">
+                Maintain independent judgment amidst market noise. Achieve sustainable asset growth through rational strategies.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT & FOOTER -->
+    <footer id="contact" class="bg-white pt-20 pb-10 px-6">
+        <div class="max-w-md mx-auto text-center">
+            <h2 class="text-3xl font-serif text-slate-900 mb-8">Get in Touch</h2>
+            <div class="space-y-4">
+                <a href="mailto:milajensen89@gmail.com" class="flex items-center justify-between p-4 bg-slate-50 rounded-xl border border-slate-200 hover:border-amber-400 hover:bg-white transition-all group">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm text-slate-900 group-hover:text-amber-600">
+                            <i class="ph ph-envelope-simple text-xl"></i>
+                        </div>
+                        <span class="font-medium text-slate-700">Send an Email</span>
+                    </div>
+                    <i class="ph ph-arrow-right text-slate-400 group-hover:text-amber-600"></i>
+                </a>
+                
+                <a href="https://wa.me/46764941721" class="flex items-center justify-between p-4 bg-slate-50 rounded-xl border border-slate-200 hover:border-green-400 hover:bg-white transition-all group">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm text-slate-900 group-hover:text-green-600">
+                            <i class="ph ph-whatsapp-logo text-xl"></i>
+                        </div>
+                        <span class="font-medium text-slate-700">WhatsApp Message</span>
+                    </div>
+                    <i class="ph ph-arrow-right text-slate-400 group-hover:text-green-600"></i>
+                </a>
+            </div>
+            <div class="mt-16 pt-8 border-t border-slate-100 text-slate-400 text-sm">
+                <p>&copy; 2025 Izabela Sobieska. All rights reserved.</p>
+                <p class="mt-1">Based in Europe. Open for advisory and speaking.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 <!--
   index.html
-  简要说明: 主入口 HTML 文件。已修正为指向构建后的 main.js 和 main.css，确保生产环境正常运行。
+  生产环境入口文件
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -10,30 +10,40 @@
     <title>Izabela Sobieska | Independent Financial Analyst & Investor</title>
     <meta name="description" content="Bridging traditional finance and the digital asset future. Specializing in crypto strategies, asset management, and risk control." />
 
-    <!-- Open Graph / Facebook (名片分享配置 - 保留) -->
+    <!-- 
+      Open Graph / Facebook 
+      注意：图片 URL 后增加了 ?v=2 以强制刷新社交媒体缓存
+    -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://izabela-sobieska.com/" />
     <meta property="og:title" content="Izabela Sobieska | Independent Financial Analyst & Investor" />
     <meta property="og:description" content="Independent investor and financial analyst. 15+ years in multi-asset, FX/derivatives, crypto and real estate." />
-    <meta property="og:image" content="https://pub-cdn.sider.ai/u/U005HE02679/web-coder/69204927965d1d957f097986/resource/ba165ca0-a100-4ee7-a491-4c677216a8cf.png" />
+    <meta property="og:image" content="https://pub-cdn.sider.ai/u/U005HE02679/web-coder/69204927965d1d957f097986/resource/ba165ca0-a100-4ee7-a491-4c677216a8cf.png?v=2" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/png" />
 
-    <!-- Twitter (名片分享配置 - 保留) -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Izabela Sobieska | Independent Financial Analyst & Investor" />
     <meta name="twitter:description" content="Independent investor and financial analyst. 15+ years in multi-asset, FX/derivatives, crypto and real estate." />
-    <meta name="twitter:image" content="https://pub-cdn.sider.ai/u/U005HE02679/web-coder/69204927965d1d957f097986/resource/ba165ca0-a100-4ee7-a491-4c677216a8cf.png" />
+    <meta name="twitter:image" content="https://pub-cdn.sider.ai/u/U005HE02679/web-coder/69204927965d1d957f097986/resource/ba165ca0-a100-4ee7-a491-4c677216a8cf.png?v=2" />
 
-    <!-- 样式：指向构建后的 CSS -->
+    <!-- WhatsApp / Google / Schema.org 兼容性 -->
+    <meta itemprop="name" content="Izabela Sobieska | Independent Financial Analyst & Investor" />
+    <meta itemprop="description" content="Bridging traditional finance and the digital asset future." />
+    <meta itemprop="image" content="https://pub-cdn.sider.ai/u/U005HE02679/web-coder/69204927965d1d957f097986/resource/ba165ca0-a100-4ee7-a491-4c677216a8cf.png?v=2" />
+    
+    <!-- 老式兼容 -->
+    <link rel="image_src" href="https://pub-cdn.sider.ai/u/U005HE02679/web-coder/69204927965d1d957f097986/resource/ba165ca0-a100-4ee7-a491-4c677216a8cf.png?v=2" />
+
+    <!-- 生产环境样式 -->
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <!-- 容器：修正 ID 为 app -->
     <div id="app"></div>
 
-    <!-- 脚本：指向构建后的 JS -->
+    <!-- 生产环境脚本 -->
     <script src="main.js"></script>
   </body>
 </html>

@@ -1,44 +1,38 @@
+<!--
+  index.html
+  简要说明: 主入口 HTML 文件。包含 Open Graph / Twitter Card 元数据以便社交媒体正确抓取预览图。
+-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- 浏览器标题 -->
-    <title>Izabela Sobieska | Independent Financial Analyst</title>
-    
-    <!-- === 核心 CSS (保持原样) === -->
-    <link href="main.css" rel="stylesheet">
+    <title>Izabela Sobieska | Independent Financial Analyst & Investor</title>
+    <meta name="description" content="Bridging traditional finance and the digital asset future. Specializing in crypto strategies, asset management, and risk control." />
 
-    <!-- === 社交媒体预览卡片 (WhatsApp / Facebook / Telegram) === -->
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    
-    <!-- 🔴 关键修改：这里必须是你现在的正式域名 -->
     <meta property="og:url" content="https://izabela-sobieska.com/" />
-    
-    <meta property="og:title" content="Izabela Sobieska | Independent Financial Analyst" />
-    <meta property="og:description" content="Bridging traditional finance and digital assets. 15+ years experience in Banking, Hedge Funds, and Crypto." />
-    
-    <!-- 🔴 预览图片：使用了你之前资料里的图片链接 -->
+    <meta property="og:title" content="Izabela Sobieska | Independent Financial Analyst & Investor" />
+    <meta property="og:description" content="Independent investor and financial analyst. 15+ years in multi-asset, FX/derivatives, crypto and real estate." />
     <meta property="og:image" content="https://pub-cdn.sider.ai/u/U005HE02679/web-coder/69204927965d1d957f097986/resource/ba165ca0-a100-4ee7-a491-4c677216a8cf.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
 
-    <!-- === Twitter 卡片 === -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Izabela Sobieska" />
-    <meta name="twitter:description" content="Independent Financial Analyst & Investor." />
+    <meta name="twitter:title" content="Izabela Sobieska | Independent Financial Analyst & Investor" />
+    <meta name="twitter:description" content="Independent investor and financial analyst. 15+ years in multi-asset, FX/derivatives, crypto and real estate." />
     <meta name="twitter:image" content="https://pub-cdn.sider.ai/u/U005HE02679/web-coder/69204927965d1d957f097986/resource/ba165ca0-a100-4ee7-a491-4c677216a8cf.png" />
-</head>
-<body>
+
+    <!-- 样式 -->
+    <link rel="stylesheet" href="./src/shadcn.css" />
+  </head>
+  <body>
     <div id="app"></div>
-    
-    <!-- 核心 JS (保持原样) -->
-    <script src="main.js"></script>
-    
-    <!-- 自动刷新脚本 (只在本地开发生效，线上会忽略) -->
-    <script>
-        if (location.hostname === 'localhost') {
-            new EventSource('/esbuild').addEventListener('change', () => location.reload())
-        }
-    </script>
-</body>
+
+    <!-- 主入口脚本 -->
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
 </html>

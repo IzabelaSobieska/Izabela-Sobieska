@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Izabela Sobieska — Independent Investor</title>
+    
+    <!-- 浏览器标签页标题 -->
+    <title>Izabela Sobieska | Independent Financial Analyst</title>
+    
+    <!-- === 社交媒体预览卡片 (WhatsApp, Telegram, Facebook) === -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Izabela Sobieska | Independent Financial Analyst" />
+    <meta property="og:description" content="Bridging traditional finance and digital assets. 15+ years experience in Banking, Hedge Funds, and Crypto." />
+    <!-- 预览图片：这里我暂时放了一张通用商务背景图。如果你有自己的照片链接，请替换下面的 content 网址 -->
+    <meta property="og:image" content="https://images.unsplash.com/photo-1611974765270-ca1258634369?q=80&w=1200&auto=format&fit=crop" />
+    
+    <!-- === Twitter/X 预览卡片 === -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Izabela Sobieska" />
+    <meta name="twitter:description" content="Independent Financial Analyst & Investor. Bridging traditional finance and digital assets." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1611974765270-ca1258634369?q=80&w=1200&auto=format&fit=crop" />
+
+    <!-- 样式文件 -->
     <link href="main.css" rel="stylesheet">
-  </head>
-  <script>
-    new EventSource('/esbuild').addEventListener('change', () =>
-      location.reload()
-    )
-  </script>
-  <body>
+</head>
+<body>
     <div id="app"></div>
+    <!-- 核心脚本 -->
     <script src="main.js"></script>
-  </body>
+    
+    <!-- 开发环境自动刷新脚本 (线上会自动忽略错误，保留即可) -->
+    <script>
+        if (location.hostname === 'localhost') {
+            new EventSource('/esbuild').addEventListener('change', () => location.reload())
+        }
+    </script>
+</body>
 </html>
-<!doctype html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="stylesheet" href="main-BBH4KZVP.css" /></head><body><div id="app"></div><div id="root"></div><script src="main-H2AN2QSF.js"></script></body></html>

@@ -4,31 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- 浏览器标签页标题 -->
+    <!-- 浏览器标题 -->
     <title>Izabela Sobieska | Independent Financial Analyst</title>
     
-    <!-- === 社交媒体预览卡片 (WhatsApp, Telegram, Facebook) === -->
+    <!-- === 核心 CSS (保持原样) === -->
+    <link href="main.css" rel="stylesheet">
+
+    <!-- === 社交媒体预览卡片 (WhatsApp / Facebook / Telegram) === -->
     <meta property="og:type" content="website" />
+    
+    <!-- 🔴 关键修改：这里必须是你现在的正式域名 -->
+    <meta property="og:url" content="https://izabela-sobieska.com/" />
+    
     <meta property="og:title" content="Izabela Sobieska | Independent Financial Analyst" />
     <meta property="og:description" content="Bridging traditional finance and digital assets. 15+ years experience in Banking, Hedge Funds, and Crypto." />
-    <!-- 预览图片：这里我暂时放了一张通用商务背景图。如果你有自己的照片链接，请替换下面的 content 网址 -->
-    <meta property="og:image" content="https://images.unsplash.com/photo-1611974765270-ca1258634369?q=80&w=1200&auto=format&fit=crop" />
     
-    <!-- === Twitter/X 预览卡片 === -->
+    <!-- 🔴 预览图片：使用了你之前资料里的图片链接 -->
+    <meta property="og:image" content="https://pub-cdn.sider.ai/u/U005HE02679/web-coder/69204927965d1d957f097986/resource/ba165ca0-a100-4ee7-a491-4c677216a8cf.png" />
+
+    <!-- === Twitter 卡片 === -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Izabela Sobieska" />
-    <meta name="twitter:description" content="Independent Financial Analyst & Investor. Bridging traditional finance and digital assets." />
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1611974765270-ca1258634369?q=80&w=1200&auto=format&fit=crop" />
-
-    <!-- 样式文件 -->
-    <link href="main.css" rel="stylesheet">
+    <meta name="twitter:description" content="Independent Financial Analyst & Investor." />
+    <meta name="twitter:image" content="https://pub-cdn.sider.ai/u/U005HE02679/web-coder/69204927965d1d957f097986/resource/ba165ca0-a100-4ee7-a491-4c677216a8cf.png" />
 </head>
 <body>
     <div id="app"></div>
-    <!-- 核心脚本 -->
+    
+    <!-- 核心 JS (保持原样) -->
     <script src="main.js"></script>
     
-    <!-- 开发环境自动刷新脚本 (线上会自动忽略错误，保留即可) -->
+    <!-- 自动刷新脚本 (只在本地开发生效，线上会忽略) -->
     <script>
         if (location.hostname === 'localhost') {
             new EventSource('/esbuild').addEventListener('change', () => location.reload())

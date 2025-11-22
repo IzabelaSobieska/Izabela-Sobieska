@@ -1,44 +1,38 @@
+<!--
+  index.html
+  简要说明: 主入口 HTML 文件。包含 Open Graph / Twitter Card 元数据以便社交媒体正确抓取预览图。
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- 1. 网页标题 -->
     <title>Izabela Sobieska | Independent Financial Analyst & Investor</title>
     <meta name="description" content="Bridging traditional finance and the digital asset future. Specializing in crypto strategies, asset management, and risk control." />
 
-    <!-- 2. Open Graph / Facebook / WhatsApp / Telegram 预览设置 -->
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <!-- 如果你有自定义域名，请把下面的链接换成你的实际域名，否则保持现状 -->
     <meta property="og:url" content="https://izabela-sobieska.com/" />
-    
-    <!-- 卡片大标题 -->
     <meta property="og:title" content="Izabela Sobieska | Independent Financial Analyst & Investor" />
-    
-    <!-- 卡片描述文字 -->
     <meta property="og:description" content="Independent investor and financial analyst. 15+ years in multi-asset, FX/derivatives, crypto and real estate." />
-    
-    <!-- 卡片预览图片 (必须是 http 开头的绝对路径) -->
     <meta property="og:image" content="https://pub-cdn.sider.ai/u/U005HE02679/web-coder/69204927965d1d957f097986/resource/ba165ca0-a100-4ee7-a491-4c677216a8cf.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:type" content="image/png" />
 
-    <!-- 3. Twitter Card 设置 -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Izabela Sobieska | Independent Financial Analyst & Investor" />
     <meta name="twitter:description" content="Independent investor and financial analyst. 15+ years in multi-asset, FX/derivatives, crypto and real estate." />
     <meta name="twitter:image" content="https://pub-cdn.sider.ai/u/U005HE02679/web-coder/69204927965d1d957f097986/resource/ba165ca0-a100-4ee7-a491-4c677216a8cf.png" />
 
-    <link rel="stylesheet" href="./src/shadcn.css">
+    <!-- 样式 -->
+    <link rel="stylesheet" href="./src/shadcn.css" />
   </head>
   <body>
     <div id="root"></div>
-    <!-- 引用你的主入口文件 -->
+
+    <!-- 主入口脚本 -->
     <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  public/sitemap.xml
+  sitemap.xml
 
-  XML sitemap for izabela-sobieska.com.
-  This file helps search engines discover important URLs of the site.
-  For now, it only includes the homepage. Add more <url> entries as needed.
+  Root sitemap for https://izabela-sobieska.com
+  - Purpose: placed at repository root so the site serves it at /sitemap.xml.
+  - If your deployment builds into a "dist" or "docs" folder, ensure the deployment
+    copies this file into that published folder (see suggestions below).
+  - To add more pages, add additional <url> entries (use absolute URLs, not fragments).
 -->
 <urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -12,9 +14,26 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
 >
+  <!--
+    Homepage entry
+    - lastmod: set to the date of this change
+    - changefreq: tells crawlers how often the content typically changes
+    - priority: relative importance on the site
+  -->
   <url>
     <loc>https://izabela-sobieska.com/</loc>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!--
+    Example: if you later have real pages (not anchor sections) add entries like:
+    <url>
+      <loc>https://izabela-sobieska.com/about</loc>
+      <lastmod>2025-11-24</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  -->
 </urlset>

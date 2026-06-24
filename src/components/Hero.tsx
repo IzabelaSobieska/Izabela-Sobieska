@@ -46,7 +46,7 @@ export default function Hero() {
             </a>
             
             <a 
-              href="https://wa.me/48732096825"
+              href="https://wa.me/19734540183"
               className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white min-w-[140px] px-6 py-3.5 rounded-md font-medium transition-all shadow-[0_0_20px_rgba(37,211,102,0.2)] hover:shadow-[0_0_30px_rgba(37,211,102,0.4)]"
             >
               <WhatsAppIcon className="w-5 h-5 fill-current" />

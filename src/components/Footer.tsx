@@ -9,8 +9,8 @@ import ContactButton from "./ContactButton";
 
 export default function Footer(): JSX.Element {
   // Placeholder values - User should update these
-  const email = "izabelasobieska73@gmail.com";
-  const whatsappNumber = "+48 732096825"; 
+  const email = "izabelasobieska45@gmail.com";
+  const whatsappNumber = "+1 9734540183"; 
 
   const mailHref = `mailto:${email}`;
   const waHref = `https://wa.me/${whatsappNumber.replace(/\D/g, "")}`;
